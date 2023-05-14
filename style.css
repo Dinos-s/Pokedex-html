@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    background: url(./img/real-pokemons.jpg) no-repeat;
+    background-size: cover;
+    color: #333
+}
+
+body.dark-mode{
+    background-color: #212121;
+    background: url(./img/iniciais.png) no-repeat;
+    background-size: cover;
+    color: #f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo, header .img-btn{
+    width: 30px;
+    transition: 0.2s ease-in-out; ;
+}
+
+header #dark-mode{
+    background: none;
+    border: none;
+}
+
+header .logo:hover, 
+header .img-btn:hover, 
+main .poke-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+.poke-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.poke-card{
+    background-color: #d8e3ec8e;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* border-radius: 15px; */
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    transition: 0.2s ease-in-out;
+}
+
+.poke-card:hover{
+    background-color: #7099e4;
+}
+
+.dark-mode .poke-card{
+    background-color: #a8a8a8a8;
+}
+
+.poke-card .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    box-shadow: 0px 4px 5px black;
+    border-radius: 10px;
+}
+
+.poke-card .info span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.poke-card .gif{
+    width: 90px;
+    height: 90px;
+}
+
+.poke-card .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+.poke-card .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+*::-webkit-scrollbar{
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
