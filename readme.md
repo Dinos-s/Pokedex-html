@@ -1,1 +1,3 @@
-![..](./pokedex.mp4)
+# Pokedex-HTML
+
+![..](./pokedex.gif)
